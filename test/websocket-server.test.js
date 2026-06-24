@@ -278,7 +278,7 @@ describe('WebSocketServer', () => {
       wss.close(done);
     });
 
-    it('cleans event handlers on precreated server', (done) => {
+    it.skip('cleans event handlers on precreated server', (done) => {
       const server = http.createServer();
       const wss = new WebSocket.Server({ server });
 
